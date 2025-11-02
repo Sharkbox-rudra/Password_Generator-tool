@@ -1,16 +1,25 @@
 import random
 
 def password_generator():
-    n = int(input("Number of chars (maximum 40) : "))
+    n = int(input("Number of chars (maximum 30) : "))
     if n > 40:
-        return ("max. chars ---> 40 \n Password can't generate....😑😑😐")
+        return ("max. chars ---> 30 \n Password can't generate....😑😑😐")
     else:
-        chars = "qwertyuiop147852369asdfghjkl!@#$%&?:ZXCVBNM"
-        password = ""
-        for i in range(n):
-            ch = random.choice(chars)
-            while ch in password:
-                ch = random.choice(chars)
-            password += ch
+        lower = "abcdefghijklmnopqrstuvwxyz"
+        upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        digits = "0123456789"
+        symbols = "!@#$%&?|"
+        password = ''
+        password += random.choice(lower)
+        password += random.choice(upper)
+        password += random.choice(digits)
+        password += random.choice(symbols)
+        all_chars = lower + upper + digits + symbols
+        while len(password) < n :
+            password = random.choice(all_chars)
+            if char not in password:
+                password += char
+        password = ''.join(random.sample(password , len(password)))
         return password
+
 print(password_generator())
