@@ -16,10 +16,11 @@ def password_generator():
         password += random.choice(symbols)
         all_chars = lower + upper + digits + symbols
         while len(password) < n :
-            password = random.choice(all_chars)
+            char = random.choice(all_chars)
             if char not in password:
                 password += char
         password = ''.join(random.sample(password , len(password)))
         return password
 
 print(password_generator())
+
