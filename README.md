@@ -32,7 +32,7 @@ A smart and secure **Password Generator** built with Python that creates strong,
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/yourusername/password-generator.git
+git clone https://github.com/Sharkbox-rudra/password-generator.git
 cd password-generator
 ```
 
@@ -83,8 +83,8 @@ password-generator/
 ## 🙋‍♂️ Author
 
 **RUDRA PRASAD GORAI**
-- LinkedIn: [)
-- GitHub: [your-github](https://github.com/yourusername)
+- LinkedIn: [https://www.linkedin.com/in/rudra-prasad-gorai-0927b239b/)
+- GitHub: [https://github.com/Sharkbox-rudra)
 
 ---
 
